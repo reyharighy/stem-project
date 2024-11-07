@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width:device-width; initial-scale:1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Sign Up</title>
+        <title>Sign In</title>
     </head>
 
     <body>
@@ -15,25 +15,19 @@
             <div class="col-12"></div> <!--Left Blank-->
             <div class="col-7">
                 <div class="form-name" style="border: 1px solid green">
-                    <div style="border: 1px solid red;" class="active">SIGN UP</div>
-                    <div style="border: 1px solid blue;"><a href="">SIGN IN</a></div> <!--Undefined-->
+                    <div style="border: 1px solid red;" class="active">SIGN IN</div>
                 </div>
                 <div id="form-body">
                     <form action="" method="" class="form-field" style="border: 1px solid black;"> <!--Undefined-->
-                        <label for="email">Sign up with email address</label>
+                        <label for="email">Sign in with email address</label>
                         <input type="email" name="email" id="email" placeholder="Enter your email">
                         <div class="password-input" style="border: 1px solid red;">
-                            <div class="password-section" style="border: 1px solid blueviolet;">
+                            <div class="password-section" style="width: 100%; border: 1px solid blueviolet;">
                                 <label for="pwd">Password</label>
                                 <input type="password" name="pwd" id="pwd" placeholder="Choose your password">
                             </div>
-                            <div class="left-blank"></div> <!--Left Blank-->
-                            <div class="confirm-password-section" style="border: 1px solid yellowgreen;">
-                                <label for="pwd">Confirm Password</label>
-                                <input type="password" name="confirm-pwd" id="confirm-pwd" placeholder="Confirm your password">
-                            </div>
                         </div>
-                        <input type="button" name="signup" id="signup" value="Sign Up">
+                        <input type="button" name="signup" id="signup" value="Sign In">
                         <hr>
                     </form>
                     <div class="google-channel">
@@ -46,8 +40,10 @@
                     </div>
                     <div class="consent" style="border: 1px solid red;">
                         <p>
-                            By signing up, you agree to our app's <br>
-                            <span class="underline">Terms of Service</span> and <span class="underline">Privacy Policy</span>
+                            Don't have an account?
+                            <a href=""> <!--Undefined-->
+                                <span class="underline" id="as-link">Sign Up</span>
+                            </a>
                         </p>
                     </div>
                 </div>

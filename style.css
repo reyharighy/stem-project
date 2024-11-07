@@ -1,11 +1,17 @@
 * {
     box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #cddfe3;
 }
 
 hr {
     margin: 10px;
     margin-top: 20px;
     margin-bottom: 0px;
+    border: 1px solid black;
 }
 
 .grid-container {
@@ -62,8 +68,15 @@ hr {
 
 .form-name .active {
     display: block;
-    font-size: 8.5vh;
+    font-size: 7vh;
     font-weight: bold;
+    color: #2b6377;
+}
+
+.form-name div > a {
+    text-decoration: none;
+    color: #4f8fa6;
+    font-weight: bolder;
 }
 
 #form-body {
@@ -77,14 +90,18 @@ hr {
 }
 
 .form-field input {
-    height: 40px;
+    height: 45px;
     border-radius: 10px;
     margin-top: 5px;
     padding-left: 10px;
+    background-color: #94ccdf;
+    border: none;
 }
 
 .form-field label, .form-field .password-label {
     margin-top: 15px;
+    font-size: small;
+    color: #1b5064;
 }
 
 .password-input {
@@ -107,7 +124,10 @@ hr {
 
 #signup {
     margin-top: 15px;
-    cursor: pointer;;
+    font-size: medium;
+    color: azure;
+    cursor: pointer;
+    background-color: #407e95;
 }
 
 .google-channel {
@@ -123,20 +143,37 @@ hr {
     align-items: center;
     width: 100%;
     border-radius: 10px;
-    height: 40px;
+    height: 45px;
     margin-top: 5px;
     cursor: pointer;
+    background-color: #1b5064;
+    font-size: medium;
+}
+
+.google-channel a {
+    text-decoration: none;
 }
 
 .google-channel a button > img {
     padding-right: 5px;
 }
 
+.google-channel a button > span {
+    color: azure;
+}
+
 .consent {
     text-align: center;
     line-height: 1.5;
+    font-size: small;
+    color: #1b5064;
 }
 
 .underline {
     text-decoration-line: underline;
+    font-weight: 500;
+}
+
+#as-link{
+    color: #1b5064;
 }
