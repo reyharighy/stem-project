@@ -10,7 +10,7 @@ hr {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(20, 1fr);
 }
 
 .col-1 {grid-column: span 1;}
@@ -25,6 +25,14 @@ hr {
 .col-10 {grid-column: span 10;}
 .col-11 {grid-column: span 11;}
 .col-12 {grid-column: span 12;}
+.col-13 {grid-column: span 13;}
+.col-14 {grid-column: span 14;}
+.col-15 {grid-column: span 15;}
+.col-16 {grid-column: span 16;}
+.col-17 {grid-column: span 17;}
+.col-18 {grid-column: span 18;}
+.col-19 {grid-column: span 19;}
+.col-20 {grid-column: span 20;}
 
 [class*="col-"] {
     float: flex;
@@ -32,10 +40,10 @@ hr {
     border: 1px solid rgb(32, 131, 184);
 }
 
-.logo {
-    height: 10vh;
-    align-content: center;
-    text-align: center;
+#website-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .body-section {
@@ -50,12 +58,12 @@ hr {
 
 .form-name > div {
     align-self: flex-end;
-    padding: 5px;
 }
 
 .form-name .active {
-    font-size: xx-large;
-    font-weight: bolder;
+    display: block;
+    font-size: 8.5vh;
+    font-weight: bold;
 }
 
 #form-body {
@@ -75,12 +83,53 @@ hr {
     padding-left: 10px;
 }
 
-.form-field label {
+.form-field label, .form-field .password-label {
     margin-top: 15px;
+}
+
+.password-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.password-input .password-section, .password-input .confirm-password-section {
+    width: 50%;
+}
+
+.password-input .password-section input, .password-input .confirm-password-section input {
+    width: 100%;
+}
+
+.password-input .left-blank {
+    width: 5%;
 }
 
 #signup {
     margin-top: 15px;
+    cursor: pointer;;
+}
+
+.google-channel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.google-channel button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.google-channel a button > img {
+    padding-right: 5px;
 }
 
 .consent {

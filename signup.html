@@ -9,26 +9,42 @@
 
     <body>
         <div class="grid-container" style="border: 2px solid green;">
-            <div class="col-2 logo">LOGO</div>
+            <div class="col-3"><img src="logo.png" alt="website-logo" id="website-logo" height="50vh" style="border: 2px solid red;"></div>
         </div>
         <div class="grid-container body-section" style="border: 2px solid red;">
-            <div class="col-7"></div> <!--Left Blank-->
-            <div class="col-5">
+            <div class="col-12"></div> <!--Left Blank-->
+            <div class="col-7">
                 <div class="form-name" style="border: 1px solid green">
                     <div style="border: 1px solid red;" class="active">SIGN UP</div>
                     <div style="border: 1px solid blue;"><a href="">SIGN IN</a></div>
                 </div>
                 <div id="form-body">
-                    <form action="" class="form-field" style="border: 1px solid black;">
+                    <form action="" method="" class="form-field" style="border: 1px solid black;"> <!--Undefined-->
                         <label for="email">Sign up with email address</label>
-                        <input type="email" name="email" id="email">
-                        <label for="pwd">Password</label>
-                        <input type="password" name="pwd" id="pwd">
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                        <div class="password-input" style="border: 1px solid red;">
+                            <div class="password-section" style="border: 1px solid blueviolet;">
+                                <label for="pwd">Password</label>
+                                <input type="password" name="pwd" id="pwd" placeholder="Choose your password">
+                            </div>
+                            <div class="left-blank"></div> <!--Left Blank-->
+                            <div class="confirm-password-section" style="border: 1px solid yellowgreen;">
+                                <label for="pwd">Confirm Password</label>
+                                <input type="password" name="confirm-pwd" id="confirm-pwd" placeholder="Confirm your password">
+                            </div>
+                        </div>
                         <input type="button" name="signup" id="signup" value="Sign Up">
                         <hr>
-                        <label for="google-signup">Or continue with</label>
-                        <input type="button" name="google-signup" id="google-signup" value="Google">
                     </form>
+                    <div class="google-channel">
+                        <label for="google-signup">Or continue with</label>
+                        <a href=""> <!--Undefined-->
+                            <button>
+                                <img src="google.webp" alt="google-logo" height="30vh">
+                                <span>Google</span>
+                            </button>
+                        </a>
+                    </div>
                     <div class="consent" style="border: 1px solid red;">
                         <p>
                             By signing up, you agree to our app's <br>
@@ -37,6 +53,7 @@
                     </div>
                 </div>
             </div>
+            <div class="col-1"></div> <!--Right Margin--> <!--Left Blank-->
         </div>
     </body>
 
