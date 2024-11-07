@@ -1,3 +1,3 @@
 # stem-project
 
-<img src="control-flow.png" width="100%">
+<img src="flow.jpg" width="100%">
